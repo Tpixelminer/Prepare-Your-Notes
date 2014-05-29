@@ -11,7 +11,30 @@ $(function() {
     var audioReady = false;
 
     // The carefully, lovingly determined percentages which his holiness removes from the prices of his products.
-    var STEAM_SALES = [10, 25, 33, 50, 66, 75, 80, 90]
+    var BUZZWORDS = [
+        "Birds",
+        "Python",
+        "Unix",
+        "sed",
+        "Excel",
+        "awk",
+        "grep",
+        "cut",
+        "regex",
+        "s/gaben/alan/",
+        "Data",
+        "SQL",
+        "SELECT * FROM alan",
+        "JSON",
+        "LaTeX",
+        "Tornado",
+        "MUD",
+        "Micro-teaching",
+        "tornado.zip",
+        "bird_info.xlsx",
+        "basser",
+        "birds.csv",
+    ]
 
     // lolsorandom
     var randomChoice = function(list) {
@@ -38,11 +61,11 @@ $(function() {
             var pageWidth = $('body').width();
             var maxSales = (pageWidth/70)*5
             var xPos = getRandomInt(0, pageWidth);
-            var percentOff = randomChoice(STEAM_SALES);
+            var buzzwords = randomChoice(BUZZWORDS);
             // Just copy the hidden box we had at page load time to make a new box.
             var newSale = $saleBox.clone().show();
 
-            newSale.text("-" + percentOff + "%"); // >js >strings
+            newSale.text(buzzwords); // >js >strings
 
             newSale.css("left", xPos);
             $('body').append(newSale);
@@ -111,7 +134,7 @@ $(function() {
 
     var prepareWallet = function() {
         if (gabeReady && iframeReady && audioReady) {
-            $('.prepare-loader').css('max-height', $('.prepare-loader > img').height() / 3 + 'px');
+            $('.prepare-loader').css('max-height', $('.prepare-loader > img').height() / 1 + 'px');
             window.setTimeout(praiseBeToGaben, 1000);
         } else {
             window.setTimeout(prepareWallet, 100);
