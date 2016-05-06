@@ -14,7 +14,7 @@ $(function() {
         "Birds",
         "Python",
         "Unix",
-        "Excel,
+        "Excel",
         "cut",
         "regex",
         "Data",
