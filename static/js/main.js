@@ -10,26 +10,18 @@ $(function() {
     var iframeReady = false;
     var audioReady = false;
 
-    // The carefully, lovingly determined percentages which his holiness removes from the prices of his products.
     var BUZZWORDS = [
         "Birds",
         "Python",
         "Unix",
-        "sed",
-        "Excel",
-        "awk",
-        "grep",
+        "Excel,
         "cut",
         "regex",
-        "s/gaben/alan/",
         "Data",
         "SQL",
-        "SELECT * FROM alan",
         "JSON",
         "LaTeX",
         "Tornado",
-        "MUD",
-        "Micro-teaching",
         "tornado.zip",
         "bird_info.xlsx",
         "basser",
